@@ -2,7 +2,9 @@
     margin :0;
     padding :40;
 }
-
+/*html{
+    scroll-behavior: smooth; ---your scrolling code--
+}*/ 
 #navbar{
     display: flex;
     align-items: center;
