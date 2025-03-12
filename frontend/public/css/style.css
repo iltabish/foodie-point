@@ -1,6 +1,6 @@
  *{
     margin :0;
-    padding :40;
+    padding :0;
 }
 /*html{
     scroll-behavior: smooth; ---your scrolling code--
@@ -36,7 +36,7 @@
 
 #navbar ul li{
     list-style: none;
-    font-size: 1.1rem;
+    font-size: 2rem;
 } 
 #navbar ul li a{
     color: white;
@@ -84,14 +84,14 @@
     margin: 3px;
     display: flex; 
 } 
-#services.box{ 
+#services .box{ 
     padding: 4px;
     border: 3px solid brown; 
     margin: 3px 6px;
     border-radius: 28px;
     background-color: #f2f2f2;
 } 
-#services.box img{
+#services .box img{
     height: 130px; 
     margin: auto; 
     display: block;
@@ -102,7 +102,7 @@
  font-family: 'Bree Serif',serif;
 }  
 .h-secondary{
-    font-size: 2.3;
+    font-size: 2.3rem;
     padding: 12px;
     font-family: 'Bree Serif',serif;
 }

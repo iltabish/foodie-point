@@ -4,12 +4,18 @@ require("./db/conn");
 const Register = require("./models/register");
 const app = express();
 const port = process.env.PORT || 3000;
+const compression = require('compression');
+app.use(compression());
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files (CSS, images, etc.)
-app.use(express.static(path.join(__dirname, '../frontend/public')));
+app.use(express.static(path.join(__dirname, '../frontend/public'), {
+    maxAge: '1d' // Cache files for 1 day
+}));
+
 
 // Routes to serve HTML pages (Now pointing to `frontend/`)
 app.get('/', (req, res) => {

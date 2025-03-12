@@ -1,6 +1,6 @@
 #navbar{
     flex-direction: column;
-    position: sticky;
+    position: relative;
 }
 #navbar ul li a{
     font-size: 1.1rem;
@@ -19,9 +19,7 @@
 #services{
     flex-direction: column;
 }
-#services .box{
 
-}
 #clients{
     flex-wrap: wrap;
 }
